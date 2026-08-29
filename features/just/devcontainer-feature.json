@@ -6,6 +6,17 @@
         "version": {
             "type": "string",
             "default": ""
+        },
+        "lspVersion": {
+            "type": "string",
+            "default": "0.6.2"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "nefrob.vscode-just-syntax"
+            ]
         }
     }
 }

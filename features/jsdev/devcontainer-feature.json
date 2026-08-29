@@ -1,0 +1,22 @@
+{
+    "id": "jsdev",
+    "name": "jsdev",
+    "version": "1.0.0",
+    "options": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ],
+            "settings": {
+                "json.format.enable": false,
+                "editor.formatOnSave": true,
+                "eslint.format.enable": true,
+                "explorer.compactFolders": false,
+                "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
+                "[javascript]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+                "[javascriptreact]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" }
+            }
+        }
+    }
+}
