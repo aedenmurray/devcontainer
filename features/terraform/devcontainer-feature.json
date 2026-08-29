@@ -1,0 +1,20 @@
+{
+    "id": "terraform",
+    "version": "1.0.0",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "containerEnv": {
+        "CHECKPOINT_DISABLE": "1"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "hashicorp.terraform"
+            ]
+        }
+    }
+}

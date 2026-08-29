@@ -1,0 +1,13 @@
+{
+    "id": "node",
+    "version": "1.0.0",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

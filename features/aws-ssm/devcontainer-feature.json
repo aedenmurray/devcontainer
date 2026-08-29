@@ -1,0 +1,13 @@
+{
+    "id": "aws-ssm",
+    "version": "1.0.0",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/aedenmurray/devcontainer/aws-cli"
+    ]
+}

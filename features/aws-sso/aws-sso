@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+[ -z "${AWS_SHELL:-}" ] || { echo "already in an $AWS_SHELL shell" >&2; exit 1; }
+
+export AWS_PROFILE=$1
+aws sts get-caller-identity >/dev/null 2>&1 || aws sso login --use-device-code >&2
+AWS_REGION=$(aws configure get region) || { echo "profile $AWS_PROFILE has no region" >&2; exit 1; }
+export AWS_REGION AWS_DEFAULT_REGION="$AWS_REGION" AWS_SHELL="$AWS_PROFILE"
+exec "${SHELL:-bash}"

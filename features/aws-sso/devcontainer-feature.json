@@ -1,0 +1,8 @@
+{
+    "id": "aws-sso",
+    "version": "1.0.0",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/aedenmurray/devcontainer/aws-cli"
+    ]
+}

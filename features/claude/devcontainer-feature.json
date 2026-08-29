@@ -1,0 +1,17 @@
+{
+    "id": "claude",
+    "version": "1.0.0",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "containerEnv": {
+        "DISABLE_AUTOUPDATER": "1"
+    },
+    "installsAfter": [
+        "ghcr.io/aedenmurray/devcontainer/node",
+        "ghcr.io/devcontainers/features/node"
+    ]
+}

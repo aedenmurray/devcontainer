@@ -1,0 +1,10 @@
+{
+    "id": "just",
+    "version": "1.0.0",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": ""
+        }
+    }
+}

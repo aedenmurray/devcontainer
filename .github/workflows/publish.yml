@@ -1,0 +1,25 @@
+name: publish
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - .github/workflows/publish.yml
+            - features/**
+    workflow_dispatch:
+
+jobs:
+    features:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            packages: write
+        steps:
+            - uses: actions/checkout@v4
+            - uses: devcontainers/action@v1
+              with:
+                  publish-features: "true"
+                  base-path-to-features: ./features
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

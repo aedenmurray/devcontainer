@@ -1,0 +1,13 @@
+{
+    "id": "aws-cli",
+    "version": "1.0.0",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "containerEnv": {
+        "AWS_PAGER": ""
+    }
+}
