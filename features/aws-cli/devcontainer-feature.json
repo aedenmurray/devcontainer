@@ -1,5 +1,6 @@
 {
     "id": "aws-cli",
+    "name": "aws-cli",
     "version": "1.0.0",
     "options": {
         "version": {

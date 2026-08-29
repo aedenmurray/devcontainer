@@ -1,5 +1,6 @@
 {
     "id": "aws-ssm",
+    "name": "aws-ssm",
     "version": "1.0.0",
     "options": {
         "version": {

@@ -1,5 +1,6 @@
 {
     "id": "terraform",
+    "name": "terraform",
     "version": "1.0.0",
     "options": {
         "version": {

@@ -1,5 +1,6 @@
 {
     "id": "node",
+    "name": "node",
     "version": "1.0.0",
     "options": {
         "version": {
